@@ -108,7 +108,7 @@ def convert_mp4_to_mp3(mp4_name):
         # Convert mp4 to mp3
         video = VideoFileClip(f"{TEMP_PATH}{mp4_name}")
         audio = video.audio
-        audio.write_audiofile(f"{MP3_PATH}/{mp3_name}")
+        audio.write_audiofile(f"{MP3_PATH}{mp3_name}")
 
     except Exception as e:
         print(f"Error converting MP4 to MP3: {e}")
